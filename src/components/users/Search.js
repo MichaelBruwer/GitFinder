@@ -25,7 +25,7 @@ const Search = () => {
         <input
           type='text'
           name='text'
-          pkaceholder='Search Users...'
+          placeholder='Search Users...'
           value={text}
           onChange={onChange}
         />
