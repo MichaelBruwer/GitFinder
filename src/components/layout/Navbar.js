@@ -12,8 +12,6 @@ const Navbar = ({ icon, title }) => {
         <li>
           <Link to='/'>Home</Link>
         </li>
-      </ul>
-      <ul>
         <li>
           <Link to='/about'>About</Link>
         </li>
@@ -21,14 +19,15 @@ const Navbar = ({ icon, title }) => {
     </nav>
   );
 };
+
 Navbar.defaultProps = {
   title: 'Github Finder',
-  icon: 'fab fa-github',
+  icon: 'fab fa-github'
 };
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired
 };
 
 export default Navbar;

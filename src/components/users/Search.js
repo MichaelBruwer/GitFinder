@@ -8,16 +8,17 @@ const Search = () => {
 
   const [text, setText] = useState('');
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
     if (text === '') {
-      alertContext.setAlert('Please enter something', 'danger');
+      alertContext.setAlert('Please enter something', 'light');
     } else {
       githubContext.searchUsers(text);
       setText('');
     }
   };
-  const onChange = (e) => setText(e.target.value);
+
+  const onChange = e => setText(e.target.value);
 
   return (
     <div>
